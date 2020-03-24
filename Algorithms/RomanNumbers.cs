@@ -26,6 +26,11 @@ namespace Algorithms
 
         static public int RomanToInt(string s)
         {
+            if (s.Length == 0)
+            {
+                throw new Exception("Input string cannot be empty.");
+            }
+
             string romanNumber = s.ToUpper();
             int result = 0;
 

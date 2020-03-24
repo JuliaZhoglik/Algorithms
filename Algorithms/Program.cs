@@ -21,6 +21,16 @@ namespace Algorithms
                 Console.WriteLine(e.Message);
             }
 
+            try
+            {
+                string s = "((1+3)()(4+(3-5)))";
+                bool check = Parentheses.CheckParentheses(s);
+                Console.WriteLine(s + " in balance = {0}", check);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
 
             Console.ReadLine();
