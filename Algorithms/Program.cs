@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms
 {
@@ -32,6 +29,24 @@ namespace Algorithms
                 Console.WriteLine(e.Message);
             }
 
+            var list = new DoubleLinkedList<int>();
+            list.AddLast(5);
+            list.AddLast(10);
+            list.AddFirst(2);
+            list.AddFirst(1);
+
+            Console.WriteLine("DoubleLinkedList");
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Count = {0}", list.Count);
+            list.Reverse();
+            Console.WriteLine("DoubleLinkedList.Reverse");
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.ReadLine();
         }
